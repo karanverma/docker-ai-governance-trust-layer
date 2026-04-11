@@ -1,0 +1,22 @@
+# LAYER 2: ISOLATION (The "Walls" of the Trust Stack)
+# Component: Docker Sandboxes
+# Purpose: Prevents the AI Agent from accessing the host or other containers.
+
+services:
+ai-agent:
+image: kaname-hardened-foundation:latest
+# Security Profile:
+security_opt:
+- no-new-privileges:true # Stops the agent from escalating to Root
+cap_drop:
+- ALL # Strips all default Linux "Superpowers"
+read_only: true # Prevents writing to the system files
+# Provides a safe, isolated temporary space for agent memory
+tmpfs:
+- /tmp:rw,noexec,nosuid
+networks:
+- internal-sandbox-net
+
+networks:
+internal-sandbox-net:
+internal: true # AI cannot talk to the internet without permission
