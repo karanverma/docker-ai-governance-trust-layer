@@ -1,6 +1,3 @@
-# docker-kename-trust-stack
-Reference Implementation for the [ Kaname ] Trust Stack Security Architecture.
-
 # [Kaname] Trust Stack: Reference Implementation
 
 This repository provides a technical blueprint for securing Agentic AI workflows using the **Trust Stack** architecture. It serves as a companion to the official Docker Captain series.
