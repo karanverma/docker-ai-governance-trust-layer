@@ -3,7 +3,7 @@
 This repository provides a technical blueprint for securing Agentic AI workflows using the **Trust Stack** architecture. It serves as a companion to the official Docker Captain series.
 
 ### The Architecture
-![Kaname Trust Stack Architecture](images/arch-diagram.png)
+![Dash Trust Stack Architecture](images/arch-diagram.png)
 
 The Trust Stack is a hierarchical security model that moves from foundational system integrity to high-level policy governance.
 
