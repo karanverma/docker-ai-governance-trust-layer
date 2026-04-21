@@ -1,4 +1,4 @@
-# [Kaname] Trust Stack: Reference Implementation
+# Dash Trust Stack: Reference Implementation
 
 This repository provides a technical blueprint for securing Agentic AI workflows using the **Trust Stack** architecture. It serves as a companion to the official Docker Captain series.
 
@@ -31,4 +31,4 @@ This is a reference architecture. Developers can clone this repo to:
 3. **Audit Integrity:** Use the Dockerfiles as a baseline for secure image builds.
 
 ---
-*Note: This repository is currently in Private Preview aligned with the [Kaname] Early Access Program.*
+*Note: This repository is currently in Private Preview aligned with the [Dash] Early Access Program.*
