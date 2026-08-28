@@ -6,13 +6,13 @@ In this project, **trust layer** is shorthand for the infrastructure between wha
 
 Docker AI Governance brings together three areas:
 
-- **Sandbox Policies** — control the network and filesystem boundaries around Docker Sandboxes.
-- **MCP Tool Governance** — control governed MCP activity through organization policy.
-- **Audit + Visibility** — provide structured records of governance activity for investigation and existing security workflows.
+- **Sandbox Policies** - control the network and filesystem boundaries around Docker Sandboxes.
+- **MCP Tool Governance** - control governed MCP activity through organization policy.
+- **Audit + Visibility** - provide structured records of governance activity for investigation and existing security workflows.
 
 ![Docker AI Governance layers](images/ai-governance-layers.png)
 
-*Figure 1: The three layers of Docker AI Governance — Sandbox Policies, MCP Tool Governance, and Audit + Visibility.*
+*Figure 1: The three layers of Docker AI Governance, Sandbox Policies, MCP Tool Governance, and Audit + Visibility.*
 
 ## Sandbox Policies
 
