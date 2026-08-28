@@ -12,7 +12,7 @@ Docker AI Governance brings together three areas:
 
 ![Docker AI Governance layers](images/ai-governance-layers.png)
 
-*Figure 1: The three layers of Docker AI Governance, Sandbox Policies, MCP Tool Governance, and Audit + Visibility.*
+    *Figure 1: The three layers of Docker AI Governance, Sandbox Policies, MCP Tool Governance, and Audit + Visibility.*
 
 ## Sandbox Policies
 
