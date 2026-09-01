@@ -34,7 +34,7 @@ The result comes from the active policy rather than from an instruction the agen
 
 MCP (Model Context Protocol) gives agents access to external tools and services. Docker AI Governance applies organization policy to MCP activity handled through Docker's MCP Gateway.
 
-MCP organization policies use Cedar. For example:
+MCP organization policies use Cedar. When MCP policy enforcement is active, governed requests are denied unless a matching `permit` allows them. For example:
 
 ```cedar
 permit (principal, action == MCP::Action::"invokeTool", resource)
@@ -46,13 +46,15 @@ when {
 
 See [`mcp/read-only-tools.cedar`](mcp/read-only-tools.cedar).
 
+`readOnly` is supplied through the MCP tool’s annotations. These annotations are server-provided and advisory.
+
 MCP policy applies to activity handled through Docker's MCP Gateway. Direct connections from a sandbox to a remote MCP server remain subject to sandbox network policy.
 
 ## Audit + Visibility
 
 Security teams also need evidence of how governance policy was applied.
 
-Docker AI Governance records sandbox policy decisions and sandbox session events as structured audit records. These records can support investigation and SIEM workflows.
+Docker AI Governance records sandbox policy decisions and sandbox session events as structured audit records. Records capture governance metadata such as the principal, action, target, decision, and time, and can support investigation and SIEM workflows.
 
 ## Docker Hardened Images
 
